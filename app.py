@@ -12,6 +12,12 @@ except FileNotFoundError:
     st.error("Model or scaler file not found. Please ensure 'diabetes_model.pkl' and 'scaler.pkl' are in the same folder.")
     st.stop()
 
+st.markdown("""
+    <style>
+    .main {background-color: #f0f2f6;}
+    </style>
+""", unsafe_allow_html=True)
+
 # App title and description
 st.title('Diabetes Detection App')
 st.write('Enter patient details to predict diabetes risk or upload a CSV file for batch predictions. Note: This is for educational purposes only.')
